@@ -37,7 +37,7 @@ echo  str_word_count('Hallo Welt');
 $vorname = "Jens";
 $nachname = "Jenson";
 
-// String kann man mit . verbinden
+// String kann man mit '.' verbinden
 $name = $vorname . $nachname;
 echo "\n";
 echo $name; // ohne Leerzeichen
@@ -51,10 +51,17 @@ echo $name;
 //https://www.w3schools.com/php/php_ref_string.asp
 //strtoupper();
 //strtolower();
-//str_replace();
+
+$name = 'Peter Pan';
+echo "\n";
+echo str_replace('Peter','Max',$name);
+echo "\n";
 //strrev();
-//trim();
-//str_split()
+//$anme = '    Peter    Pan';
+//echo trim($anme);
+$domain = 'www.test.de';
+var_dump(explode('.',$domain));
+
 // String Slicing
 $a = "php ist super toll";
 
