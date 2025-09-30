@@ -28,16 +28,28 @@ saythenamedefault($name='George');// Aufrufen mit geänderten default value Tom
 
 $value ="default";
 
+
+/**
+ * @param mixed $eins
+ * @param int $zwei
+ * @param int $drei
+ * @return string[]|false
+ */
+function parameter(mixed $eins , int $zwei, string $drei):array|false{
+    echo $eins, $zwei , $drei;
+}
+parameter('eins',drei: 3,zwei: 2 );
+
+
+
+
 function change($string)
 {
     $string = 'change';  // änderung der Variable in der Funktion
     print ("Aufruf in der Funktion $string <br>");
 }
 
-function parameter(int $eins ,int $zwei,int $drei):void{
-    echo $eins, $zwei , $drei;
-}
-parameter('eins',drei: 3,zwei: 2 );
+
 
 change($value);  // Beim Aufruf wird der geänderte Wert ausgegeben
 print ("Aufruf ausserhalb der Funktion $value <br>");  // Die übergebene Variable hat sich aber nicht geändert
