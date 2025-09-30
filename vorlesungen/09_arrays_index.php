@@ -83,7 +83,7 @@ printn(array_search("Bill", $teilnehmer));
 
 // Liste Kopieren
 printn('In Php kann man Arrays einfach kopieren da sie immer by Value uebergeben werden');
-$copy_teilnehmer = $teilnehmer;
+$copy_teilnehmer = &$teilnehmer;
 printn("");
 printn("");
 printn("Original");
